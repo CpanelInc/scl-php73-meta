@@ -33,9 +33,9 @@ BuildRequires: help2man
 # Temporary work-around
 BuildRequires: iso-codes
 
-#Requires:      %{?scl_prefix}php-common
-#Requires:      %{?scl_prefix}php-cli
-#Requires:      %{?scl_prefix}pear
+Requires:      %{?scl_prefix}php-common
+Requires:      %{?scl_prefix}php-cli
+Requires:      %{?scl_prefix}pear
 
 %description
 This is the main package for %scl Software Collection,
