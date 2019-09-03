@@ -14,7 +14,7 @@
 
 Summary:       Package that installs PHP 7.3
 Name:          %scl_name
-Version:       7.3.8
+Version:       7.3.9
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4590 for more details
 %define        release_prefix 1
@@ -180,6 +180,9 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Tue Sep 03 2019 Cory McIntire <cory@cpanel.net> - 7.3.9-1
+- EA-8636: Update scl-php73 from v7.3.8 to v7.3.9
+
 * Thu Aug 01 2019 Cory McIntire <cory@cpanel.net> - 7.3.8-1
 - EA-8594: Update scl-php73 from v7.3.7 to v7.3.8
 
