@@ -14,7 +14,7 @@
 
 Summary:       Package that installs PHP 7.3
 Name:          %scl_name
-Version:       7.3.27
+Version:       7.3.28
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4590 for more details
 %define        release_prefix 1
@@ -182,6 +182,9 @@ mkdir -p %{buildroot}/opt/cpanel/%{scl}/root/usr/share/locale
 
 
 %changelog
+* Thu Apr 29 2021 Cory McIntire <cory@cpanel.net> - 7.3.28-1
+- EA-9730: Update scl-php73 from v7.3.27 to v7.3.28
+
 * Thu Feb 04 2021 Cory McIntire <cory@cpanel.net> - 7.3.27-1
 - EA-9568: Update scl-php73 from v7.3.26 to v7.3.27
 
